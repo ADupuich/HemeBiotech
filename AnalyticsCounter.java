@@ -6,9 +6,7 @@ import java.util.Map;
 public class AnalyticsCounter {
 
 	
-	public static void main(String args[]) throws Exception {
-		// first get input = méthode Main, mon prg commence ici
-		
+	public static void main(String args[]) throws Exception {		
 		
 	ReadSymptomDataFromFile readSymptoms = new ReadSymptomDataFromFile ("/home/amaury/git/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/Project02Eclipse/symptoms.txt");
 	List<String>nameOfSymptoms = readSymptoms.GetSymptoms();
