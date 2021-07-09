@@ -6,11 +6,12 @@ import java.util.TreeMap;
 import java.util.Collections;
 
 
-public class SymptomsCount implements ISymptomCount{
+public class SymptomsCount implements ISymp {
 
 	Map<String, Integer> symptomsCount = new TreeMap<>();
 	
-	public Map<String, Integer> getSymptomsCount(List<String> nameOfSymptoms) {
+	@Override	
+	public Map<String, Integer>getSymptomsCount(List<String>nameOfSymptoms) {
 			if (nameOfSymptoms != null && !nameOfSymptoms.isEmpty()) {
 					
 				for (String symptom : nameOfSymptoms) {

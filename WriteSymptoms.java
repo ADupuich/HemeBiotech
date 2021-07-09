@@ -15,11 +15,11 @@ public class WriteSymptoms implements ISymptomsWriter{
 				String symptom;
 				Integer valeur;
 				Iterator<String>iterator = symptomsCount.keySet().iterator();
-				String Newligne=System.getProperty("line.separator");
+				String newligne=System.getProperty("line.separator");
 				while (iterator.hasNext()) {
 					symptom = iterator.next();
 					valeur = symptomsCount.get(symptom);
-					writer.write(symptom +" : " + valeur + Newligne);
+					writer.write(symptom +" : " + valeur + newligne);
 				
 					}
 	writer.close();
